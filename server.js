@@ -1,0 +1,144 @@
+// Tik's Career Board - job scanner + application tracker for Vientiane Capital
+// GIS / mapping, project management and environmental-sector management roles.
+// Runs locally on port 3809.
+const express = require('express');
+const path = require('path');
+const cron = require('node-cron');
+const os = require('os');
+const { runScan, JOBS_FILE, META_FILE, readJson, writeJson, DATA_DIR } = require('./scanner');
+
+const PORT = 3809;
+const NOTES_FILE = path.join(DATA_DIR, 'notes.json');
+
+const app = express();
+app.use(express.json());
+app.use(express.static(path.join(__dirname, 'docs')));
+
+let scanning = false;
+async function safeScan(trigger) {
+  if (scanning) return { busy: true };
+  scanning = true;
+  try { return await runScan(trigger); }
+  finally { scanning = false; }
+}
+
+// ---- API: jobs ----
+app.get('/api/jobs', (req, res) => {
+  const store = readJson(JOBS_FILE, { jobs: {} });
+  const meta = readJson(META_FILE, {});
+  const jobs = Object.values(store.jobs).sort((a, b) => (b.firstSeen || '').localeCompare(a.firstSeen || ''));
+  res.json({ jobs, lastScan: meta.lastScan || null, lastScanNew: meta.lastScanNew || 0, scanning });
+});
+
+app.post('/api/scan', async (req, res) => {
+  const result = await safeScan('manual');
+  res.json(result);
+});
+
+// mark all current NEW jobs as seen (called when she views the list)
+app.post('/api/jobs/seen', (req, res) => {
+  const store = readJson(JOBS_FILE, { jobs: {} });
+  for (const j of Object.values(store.jobs)) j.isNew = false;
+  writeJson(JOBS_FILE, store);
+  res.json({ ok: true });
+});
+
+app.put('/api/jobs/:id/fav', (req, res) => {
+  const store = readJson(JOBS_FILE, { jobs: {} });
+  const job = store.jobs[req.params.id];
+  if (!job) return res.status(404).json({ error: 'not found' });
+  job.fav = !!req.body.fav;
+  writeJson(JOBS_FILE, store);
+  res.json({ ok: true, fav: job.fav });
+});
+
+app.delete('/api/jobs/:id', (req, res) => {
+  const store = readJson(JOBS_FILE, { jobs: {} });
+  delete store.jobs[req.params.id];
+  writeJson(JOBS_FILE, store);
+  res.json({ ok: true });
+});
+
+// ---- API: notes / tracker ----
+app.get('/api/notes', (req, res) => {
+  res.json(readJson(NOTES_FILE, { notes: [] }));
+});
+
+app.post('/api/notes', (req, res) => {
+  const store = readJson(NOTES_FILE, { notes: [] });
+  const note = {
+    id: 'n' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+    title: String(req.body.title || '').slice(0, 200),
+    org: String(req.body.org || '').slice(0, 200),
+    url: String(req.body.url || '').slice(0, 500),
+    status: String(req.body.status || 'Saved'),
+    feedback: String(req.body.feedback || 'No'),
+    salary: String(req.body.salary || '').slice(0, 100),
+    note: String(req.body.note || '').slice(0, 2000),
+    statusDates: (req.body.statusDates && typeof req.body.statusDates === 'object')
+      ? req.body.statusDates
+      : { [String(req.body.status || 'Saved')]: new Date().toISOString().slice(0, 10) },
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString(),
+  };
+  store.notes.unshift(note);
+  writeJson(NOTES_FILE, store);
+  res.json(note);
+});
+
+// bulk replace - used by the cloud-sync layer to mirror the merged tracker
+app.put('/api/notes/bulk', (req, res) => {
+  if (!Array.isArray(req.body.notes)) return res.status(400).json({ error: 'notes array required' });
+  writeJson(NOTES_FILE, { notes: req.body.notes });
+  res.json({ ok: true, count: req.body.notes.length });
+});
+
+app.put('/api/notes/:id', (req, res) => {
+  const store = readJson(NOTES_FILE, { notes: [] });
+  const note = store.notes.find(n => n.id === req.params.id);
+  if (!note) return res.status(404).json({ error: 'not found' });
+  for (const k of ['title', 'org', 'url', 'status', 'feedback', 'salary', 'note']) {
+    if (req.body[k] !== undefined) note[k] = String(req.body[k]);
+  }
+  if (req.body.statusDates && typeof req.body.statusDates === 'object') {
+    note.statusDates = req.body.statusDates;
+  }
+  note.updatedAt = new Date().toISOString();
+  writeJson(NOTES_FILE, store);
+  res.json(note);
+});
+
+app.delete('/api/notes/:id', (req, res) => {
+  const store = readJson(NOTES_FILE, { notes: [] });
+  store.notes = store.notes.filter(n => n.id !== req.params.id);
+  writeJson(NOTES_FILE, store);
+  res.json({ ok: true });
+});
+
+// ---- scan every 4 hours (9am, 1pm, 5pm, 9pm, 1am, 5am local) ----
+cron.schedule('0 1,5,9,13,17,21 * * *', () => safeScan('4-hourly'));
+
+// catch-up: if the PC was off for a scheduled scan, run one when it's been 4+ hours
+function catchUp() {
+  const meta = readJson(META_FILE, {});
+  const last = meta.lastScan ? new Date(meta.lastScan).getTime() : 0;
+  if (Date.now() - last > 4 * 3600 * 1000) {
+    console.log('[scan] catch-up: last scan was over 4h ago, running now');
+    safeScan(last ? 'catch-up' : 'first-run');
+  }
+}
+
+app.listen(PORT, '0.0.0.0', () => {
+  const nets = os.networkInterfaces();
+  let lan = null;
+  for (const list of Object.values(nets)) {
+    for (const n of list || []) {
+      if (n.family === 'IPv4' && !n.internal && !lan) lan = n.address;
+    }
+  }
+  console.log("Tik's Career Board running:");
+  console.log('  PC:    http://localhost:' + PORT);
+  if (lan) console.log('  Phone: http://' + lan + ':' + PORT + '  (same Wi-Fi)');
+  console.log('Scans every 4 hours from 9:00 AM (+ catch-up on startup)');
+  catchUp();
+});

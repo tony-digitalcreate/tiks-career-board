@@ -1,0 +1,13 @@
+{
+  "name": "Tik's Career Board",
+  "short_name": "Tik's Board",
+  "description": "GIS / mapping, project management and environmental-sector management jobs in Vientiane Capital + application tracker",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fbf8f5",
+  "theme_color": "#ffffff",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

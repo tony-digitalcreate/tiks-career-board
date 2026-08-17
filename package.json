@@ -1,0 +1,13 @@
+{
+  "name": "tiks-career-board",
+  "version": "1.0.0",
+  "description": "Tik's Career Board - scans GIS / mapping, project management and environmental-sector management jobs in Vientiane Capital (108.jobs + web search) with an application tracker. Free & local.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "node-cron": "^3.0.3"
+  }
+}

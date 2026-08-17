@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tik's Career Board</title>
+<meta name="theme-color" content="#ffffff">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icon-32.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<style>
+:root {
+  --bg: #fbf8f5;
+  --panel: #ffffff;
+  --panel2: #fdf6f0;
+  --line: #ece2d8;
+  --line-soft: #f3ece5;
+  --text: #211c18;
+  --dim: #7d7269;
+  --or1: #ffab3f;
+  --or2: #ff7a18;
+  --or3: #ef5f0a;
+  --grad: linear-gradient(135deg, var(--or1), var(--or2) 55%, var(--or3));
+  /* warm elevation under orange controls - offset drop shadow, not a halo */
+  --glow: 0 3px 10px rgba(180, 78, 10, .22);
+  --shadow: 0 1px 2px rgba(63, 44, 28, .05), 0 6px 18px rgba(63, 44, 28, .04);
+  --amber: #cf8a00;
+  --red: #dc4a3d;
+  --green: #12916a;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--bg); color: var(--text);
+  min-height: 100vh; padding-bottom: 40px;
+}
+header {
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px 18px 12px;
+  position: sticky; top: 0; background: rgba(255,255,255,.93); backdrop-filter: blur(8px); z-index: 10;
+  border-bottom: 1px solid var(--line);
+}
+header img { width: 38px; height: 38px; border-radius: 11px; box-shadow: var(--shadow); }
+header h1 { font-size: 19px; letter-spacing: .2px; font-weight: 800; }
+header h1 span { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+#lastScan { font-size: 11px; color: var(--dim); text-align: right; line-height: 1.35; }
+.cloudstat {
+  margin-left: auto; margin-right: 10px;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 20px;
+  padding: 5px 11px; font-size: 11px; font-weight: 700; cursor: pointer; transition: .15s;
+}
+.cloudstat.off  { color: var(--dim); }
+.cloudstat.sync { color: var(--amber); border-color: rgba(207,138,0,.4); }
+.cloudstat.ok   { color: var(--green); border-color: rgba(18,145,106,.35); }
+
+nav {
+  display: flex; gap: 10px; padding: 12px 18px;
+  position: sticky; top: 63px; background: rgba(255,255,255,.93); backdrop-filter: blur(8px); z-index: 10;
+}
+nav button {
+  flex: 1; padding: 12px 0; font-size: 14px; font-weight: 700;
+  background: var(--panel); color: var(--dim);
+  border: 1px solid var(--line); border-radius: 13px; cursor: pointer;
+  transition: .15s;
+}
+nav button:hover { border-color: #dcc9b7; }
+nav button.active { background: var(--grad); color: #fff; border-color: transparent; box-shadow: var(--glow); }
+nav button .badge {
+  background: #fff; color: var(--or3); border-radius: 10px;
+  font-size: 11px; padding: 1px 7px; margin-left: 6px; font-weight: 800;
+}
+nav button:not(.active) .badge { background: rgba(255,122,24,.12); color: var(--or3); }
+
+main { padding: 14px 18px; max-width: 780px; margin: 0 auto; }
+
+.toolbar { display: flex; gap: 9px; margin-bottom: 14px; flex-wrap: wrap; align-items: center; }
+.toolbar select, .toolbar input[type=text] {
+  background: var(--panel); color: var(--text); border: 1px solid var(--line);
+  border-radius: 10px; padding: 9px 12px; font-size: 13px; outline: none; transition: .15s;
+}
+.toolbar input[type=text]:focus, .toolbar select:focus { border-color: var(--or2); box-shadow: 0 0 0 3px rgba(255,122,24,.14); }
+.toolbar input[type=text] { flex: 1; min-width: 120px; }
+.btn {
+  background: var(--grad); color: #fff; border: none; border-radius: 10px;
+  padding: 10px 16px; font-size: 13px; font-weight: 700; cursor: pointer;
+  box-shadow: var(--glow); transition: .15s;
+}
+.btn:hover { filter: brightness(1.06); }
+.btn:disabled { opacity: .5; }
+.btn.ghost { background: var(--panel); color: var(--dim); border: 1px solid var(--line); box-shadow: none; }
+.btn.ghost:hover { border-color: #dcc9b7; color: var(--text); }
+.btn.danger { background: transparent; color: var(--red); border: 1px solid var(--line); box-shadow: none; }
+.btn.danger:hover { border-color: rgba(220,74,61,.45); }
+
+.card {
+  background: var(--panel); border: 1px solid var(--line-soft); border-radius: 14px;
+  padding: 15px 16px; margin-bottom: 12px; box-shadow: var(--shadow);
+  transition: border-color .15s, box-shadow .15s;
+}
+.card:hover { border-color: var(--line); }
+.card.new { border-color: rgba(255,122,24,.55); background: linear-gradient(180deg, #fffaf4, #fff 70px); }
+.job-head { display: flex; align-items: flex-start; gap: 10px; }
+.job-title { font-size: 15px; font-weight: 700; line-height: 1.35; flex: 1; }
+.job-title a { color: var(--text); text-decoration: none; }
+.job-title a:active, .job-title a:hover { color: var(--or3); }
+.tag-new {
+  background: var(--grad); color: #fff; font-size: 10px; font-weight: 800;
+  border-radius: 6px; padding: 2px 7px; margin-left: 6px; vertical-align: 2px; letter-spacing: .5px;
+}
+.star-btn {
+  background: none; border: none; cursor: pointer; font-size: 21px; line-height: 1;
+  color: #cdbeb1; padding: 2px 4px; transition: .15s; flex-shrink: 0;
+}
+.star-btn:hover { transform: scale(1.2); }
+.star-btn.on { color: var(--or2); }
+.job-meta { font-size: 12px; color: var(--dim); margin-top: 6px; line-height: 1.55; }
+.job-meta b { color: var(--text); font-weight: 600; }
+.cats { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px; }
+.cat {
+  font-size: 10.5px; border: 1px solid rgba(255,122,24,.25); color: #b95208;
+  background: rgba(255,122,24,.07);
+  border-radius: 20px; padding: 2.5px 10px; font-weight: 600;
+}
+.job-actions { display: flex; gap: 8px; margin-top: 12px; }
+.job-actions .btn { font-size: 12px; padding: 8px 14px; }
+.snippet { font-size: 12px; color: var(--dim); margin-top: 6px; font-style: italic; }
+
+.empty { text-align: center; color: var(--dim); padding: 44px 10px; font-size: 14px; line-height: 1.7; }
+
+/* ---- notes / applications ---- */
+.note-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 12px; }
+.note-grid label { font-size: 10.5px; color: var(--dim); display: block; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 1px; }
+.note-grid select, .note-grid input {
+  width: 100%; background: var(--panel2); color: var(--text);
+  border: 1px solid var(--line); border-radius: 9px; padding: 9px 10px; font-size: 13px;
+  outline: none; transition: .15s;
+}
+.note-grid select:focus, .note-grid input:focus { border-color: var(--or2); box-shadow: 0 0 0 3px rgba(255,122,24,.12); }
+textarea {
+  width: 100%; background: var(--panel2); color: var(--text);
+  border: 1px solid var(--line); border-radius: 9px; padding: 9px 10px;
+  font-size: 13px; font-family: inherit; resize: vertical; min-height: 44px; margin-top: 10px;
+  outline: none; transition: .15s;
+}
+textarea:focus { border-color: var(--or2); box-shadow: 0 0 0 3px rgba(255,122,24,.12); }
+.note-head { display: flex; align-items: center; gap: 8px; }
+.note-head input.title-in {
+  flex: 1; background: transparent; border: none; color: var(--text);
+  font-size: 15px; font-weight: 700; outline: none; min-width: 0;
+}
+.pill {
+  font-size: 11px; font-weight: 800; border-radius: 20px; padding: 4px 12px;
+  white-space: nowrap; letter-spacing: .3px;
+}
+.pill.st-Saved     { background: #f4efea; color: var(--dim); }
+.pill.st-Applied   { background: rgba(255,122,24,.13); color: #b95208; }
+.pill.st-Interview { background: rgba(207,138,0,.14);  color: var(--amber); }
+.pill.st-Offer     { background: rgba(18,145,106,.13); color: var(--green); }
+.pill.st-Rejected  { background: rgba(220,74,61,.11);  color: var(--red); }
+
+.open-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--grad); color: #fff; text-decoration: none;
+  font-size: 12px; font-weight: 700; border-radius: 20px; padding: 6px 14px;
+  box-shadow: var(--glow); transition: .15s; margin-top: 8px;
+}
+.open-link:hover { filter: brightness(1.06); }
+
+/* status timeline stepper */
+.stepper { display: flex; align-items: flex-start; margin: 14px 2px 2px; }
+.step { flex: 1; text-align: center; position: relative; }
+.step .dot {
+  width: 14px; height: 14px; border-radius: 50%; margin: 0 auto;
+  background: #fff; border: 2px solid #e2d6cb; position: relative; z-index: 2;
+}
+.step.done .dot { background: var(--grad); border-color: transparent; }
+.step:not(:first-child)::before {
+  content: ''; position: absolute; top: 6px; left: -50%; width: 100%; height: 2px;
+  background: #e9dfd5; z-index: 1;
+}
+.step.done:not(:first-child)::before { background: linear-gradient(90deg, var(--or1), var(--or2)); }
+.step .sname { font-size: 10px; color: var(--dim); margin-top: 6px; font-weight: 700; letter-spacing: .3px; }
+.step.done .sname { color: var(--or3); }
+.step .sdate { font-size: 9.5px; color: var(--dim); margin-top: 1px; }
+.rejected-bar {
+  margin-top: 12px; background: rgba(220,74,61,.07); border: 1px solid rgba(220,74,61,.25);
+  color: var(--red); font-size: 12px; font-weight: 700; border-radius: 9px; padding: 8px 12px; text-align: center;
+}
+.ago-bar {
+  margin-top: 12px; background: rgba(255,122,24,.07); border: 1px solid rgba(255,122,24,.22);
+  color: #b95208; font-size: 12px; font-weight: 700; border-radius: 9px; padding: 8px 12px; text-align: center;
+}
+
+.saved-hint { font-size: 11px; color: var(--green); opacity: 0; transition: opacity .3s; }
+.saved-hint.show { opacity: 1; }
+#addNoteBtn { width: 100%; margin-bottom: 14px; padding: 13px; font-size: 14px; }
+.spin {
+  display: inline-block; width: 14px; height: 14px; border: 2px solid rgba(255,122,24,.25);
+  border-top-color: var(--or2); border-radius: 50%; animation: sp 1s linear infinite;
+  vertical-align: -2px; margin-right: 6px;
+}
+.btn .spin { border-color: #ffffff66; border-top-color: #fff; }
+@keyframes sp { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+<header>
+  <img src="icon-192.png" alt="">
+  <h1>Tik's <span>Career Board</span></h1>
+  <button class="cloudstat off" id="cloudStat" onclick="initCloud()" title="Cloud sync — tap to retry">☁ …</button>
+  <div id="lastScan"></div>
+</header>
+
+<nav>
+  <button id="tabJobsBtn" class="active" onclick="showTab('jobs')">🔍 Job Scanner<span id="newBadge"></span></button>
+  <button id="tabNotesBtn" onclick="showTab('notes')">📝 My Applications</button>
+</nav>
+
+<main>
+  <section id="tabJobs">
+    <div class="toolbar">
+      <input type="text" id="jobFilter" placeholder="Filter jobs..." oninput="renderJobs()">
+      <select id="srcFilter" onchange="renderJobs()">
+        <option value="">All sources</option>
+      </select>
+      <select id="catFilter" onchange="renderJobs()">
+        <option value="">All fields</option>
+      </select>
+      <button class="btn" id="scanBtn" onclick="scanNow()">Scan Now</button>
+    </div>
+    <div id="jobList"></div>
+  </section>
+
+  <section id="tabNotes" style="display:none">
+    <button class="btn" id="addNoteBtn" onclick="addNote()">+ Add application / note</button>
+    <div class="toolbar" style="margin-top:-4px">
+      <button class="btn ghost" onclick="exportBackup()">⬇ Backup</button>
+      <button class="btn ghost" onclick="document.getElementById('importFile').click()">⬆ Restore</button>
+      <input type="file" id="importFile" accept="application/json,.json" style="display:none">
+    </div>
+    <div id="noteList"></div>
+  </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
