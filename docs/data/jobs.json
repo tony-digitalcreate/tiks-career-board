@@ -28,7 +28,7 @@
         "Environment & Climate"
       ],
       "firstSeen": "2026-08-17T06:14:51.436Z",
-      "lastSeen": "2026-08-31T07:52:28.803Z",
+      "lastSeen": "2026-08-31T17:17:48.695Z",
       "isNew": true
     },
     "108-6a7ad22bc04bc0f849d85eb9": {
@@ -103,7 +103,7 @@
         "GIS & Mapping"
       ],
       "firstSeen": "2026-08-18T10:17:32.050Z",
-      "lastSeen": "2026-08-31T07:52:28.803Z",
+      "lastSeen": "2026-08-31T17:17:48.695Z",
       "isNew": true
     },
     "108-6a868167585e96605707250b": {
@@ -118,7 +118,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-08-20T10:19:23.546Z",
-      "lastSeen": "2026-08-31T07:52:28.803Z",
+      "lastSeen": "2026-08-31T17:17:48.695Z",
       "isNew": true
     },
     "108-6a86b67b585e9660571f1df1": {
@@ -133,7 +133,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-08-20T10:19:23.546Z",
-      "lastSeen": "2026-08-31T07:52:28.803Z",
+      "lastSeen": "2026-08-31T17:17:48.695Z",
       "isNew": true
     },
     "108-6a87dd9486105f8554827748": {
@@ -148,7 +148,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-08-21T06:28:09.707Z",
-      "lastSeen": "2026-08-31T07:52:28.803Z",
+      "lastSeen": "2026-08-31T17:17:48.695Z",
       "isNew": true
     },
     "108-6a8bb1afa0287a3d55b76999": {
@@ -163,7 +163,7 @@
         "Environment & Climate"
       ],
       "firstSeen": "2026-08-24T02:55:25.791Z",
-      "lastSeen": "2026-08-31T07:52:28.803Z",
+      "lastSeen": "2026-08-31T17:17:48.695Z",
       "isNew": true
     },
     "108-6a8c17b9ab2a8a292584bb01": {
@@ -178,7 +178,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-08-24T18:24:18.904Z",
-      "lastSeen": "2026-08-31T07:52:28.803Z",
+      "lastSeen": "2026-08-31T17:17:48.695Z",
       "isNew": true
     },
     "108-6a8fc323ab2a8a29256a1a31": {
@@ -193,7 +193,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-08-27T17:03:42.893Z",
-      "lastSeen": "2026-08-31T07:52:28.803Z",
+      "lastSeen": "2026-08-31T17:17:48.695Z",
       "isNew": true
     },
     "108-6a95325642bc3308cbd28de2": {
@@ -203,12 +203,28 @@
       "org": "Jager Consulting Co., Ltd",
       "location": "Vientiane Capital",
       "url": "https://108.jobs/job_detail/6a95325642bc3308cbd28de2",
-      "closingDate": "2026-09-15T16:59:59.999Z",
+      "closingDate": "2026-09-15T16:59:59.000Z",
       "categories": [
         "Project Management"
       ],
       "firstSeen": "2026-08-31T07:52:28.803Z",
-      "lastSeen": "2026-08-31T07:52:28.803Z",
+      "lastSeen": "2026-08-31T17:17:48.695Z",
+      "isNew": true
+    },
+    "108-6a9528f142bc3308cbce767c": {
+      "id": "108-6a9528f142bc3308cbce767c",
+      "source": "108.jobs",
+      "title": "Environment and Social Risk Management Assistant",
+      "org": "Global Partnership for Education III Project Learning and Equity Acceleration Project (LEAP)",
+      "location": "Vientiane Capital",
+      "url": "https://108.jobs/job_detail/6a9528f142bc3308cbce767c",
+      "closingDate": "2026-09-16T16:59:59.000Z",
+      "categories": [
+        "Management / Leadership",
+        "Environment & Climate"
+      ],
+      "firstSeen": "2026-08-31T17:17:48.695Z",
+      "lastSeen": "2026-08-31T17:17:48.695Z",
       "isNew": true
     }
   },
