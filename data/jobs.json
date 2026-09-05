@@ -43,7 +43,7 @@
         "GIS & Mapping"
       ],
       "firstSeen": "2026-08-18T10:17:32.050Z",
-      "lastSeen": "2026-09-04T23:33:14.064Z",
+      "lastSeen": "2026-09-05T06:29:51.927Z",
       "isNew": true
     },
     "108-6a868167585e96605707250b": {
@@ -88,7 +88,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-08-21T06:28:09.707Z",
-      "lastSeen": "2026-09-04T23:33:14.064Z",
+      "lastSeen": "2026-09-05T06:29:51.927Z",
       "isNew": true
     },
     "108-6a8bb1afa0287a3d55b76999": {
@@ -103,7 +103,7 @@
         "Environment & Climate"
       ],
       "firstSeen": "2026-08-24T02:55:25.791Z",
-      "lastSeen": "2026-09-04T23:33:14.064Z",
+      "lastSeen": "2026-09-05T06:29:51.927Z",
       "isNew": true
     },
     "108-6a8c17b9ab2a8a292584bb01": {
@@ -118,7 +118,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-08-24T18:24:18.904Z",
-      "lastSeen": "2026-09-04T23:33:14.064Z",
+      "lastSeen": "2026-09-05T06:29:51.927Z",
       "isNew": true
     },
     "108-6a8fc323ab2a8a29256a1a31": {
@@ -133,7 +133,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-08-27T17:03:42.893Z",
-      "lastSeen": "2026-09-04T23:33:14.064Z",
+      "lastSeen": "2026-09-05T06:29:51.927Z",
       "isNew": true
     },
     "108-6a95325642bc3308cbd28de2": {
@@ -148,7 +148,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-08-31T07:52:28.803Z",
-      "lastSeen": "2026-09-04T23:33:14.064Z",
+      "lastSeen": "2026-09-05T06:29:51.927Z",
       "isNew": true
     },
     "108-6a9528f142bc3308cbce767c": {
@@ -164,7 +164,7 @@
         "Environment & Climate"
       ],
       "firstSeen": "2026-08-31T17:17:48.695Z",
-      "lastSeen": "2026-09-04T23:33:14.064Z",
+      "lastSeen": "2026-09-05T06:29:51.927Z",
       "isNew": true
     },
     "108-6a9688575d0366c462e1f03a": {
@@ -197,7 +197,7 @@
         "Environment & Climate"
       ],
       "firstSeen": "2026-09-02T06:36:51.900Z",
-      "lastSeen": "2026-09-04T23:33:14.064Z",
+      "lastSeen": "2026-09-05T06:29:51.927Z",
       "isNew": true
     },
     "108-6a9a7f596cee8bc93bafa44d": {
@@ -212,7 +212,7 @@
         "Environment & Climate"
       ],
       "firstSeen": "2026-09-04T13:51:46.125Z",
-      "lastSeen": "2026-09-04T23:33:14.064Z",
+      "lastSeen": "2026-09-05T06:29:51.927Z",
       "isNew": true
     },
     "108-6a9a7d286cee8bc93baeb947": {
@@ -227,7 +227,22 @@
         "Environment & Climate"
       ],
       "firstSeen": "2026-09-04T13:51:46.125Z",
-      "lastSeen": "2026-09-04T23:33:14.064Z",
+      "lastSeen": "2026-09-05T06:29:51.927Z",
+      "isNew": true
+    },
+    "108-6a9b7f116cee8bc93bd44f80": {
+      "id": "108-6a9b7f116cee8bc93bd44f80",
+      "source": "108.jobs",
+      "title": "Senior Program Officer (Lao Nationality)",
+      "org": "Good Neighbors Laos",
+      "location": "Vientiane Capital",
+      "url": "https://108.jobs/job_detail/6a9b7f116cee8bc93bd44f80",
+      "closingDate": "2026-09-20T16:59:59.999Z",
+      "categories": [
+        "Project Management"
+      ],
+      "firstSeen": "2026-09-05T06:29:51.927Z",
+      "lastSeen": "2026-09-05T06:29:51.927Z",
       "isNew": true
     }
   },
