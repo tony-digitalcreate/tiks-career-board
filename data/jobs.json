@@ -12,7 +12,7 @@
         "GIS & Mapping"
       ],
       "firstSeen": "2026-08-18T10:17:32.050Z",
-      "lastSeen": "2026-09-15T23:48:57.722Z",
+      "lastSeen": "2026-09-16T06:58:28.164Z",
       "isNew": true
     },
     "108-6a8c17b9ab2a8a292584bb01": {
@@ -27,7 +27,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-08-24T18:24:18.904Z",
-      "lastSeen": "2026-09-15T23:48:57.722Z",
+      "lastSeen": "2026-09-16T06:58:28.164Z",
       "isNew": true
     },
     "108-6a8fc323ab2a8a29256a1a31": {
@@ -73,7 +73,7 @@
         "Environment & Climate"
       ],
       "firstSeen": "2026-08-31T17:17:48.695Z",
-      "lastSeen": "2026-09-15T23:48:57.722Z",
+      "lastSeen": "2026-09-16T06:58:28.164Z",
       "isNew": true
     },
     "108-6a9688575d0366c462e1f03a": {
@@ -89,7 +89,7 @@
         "Environment & Climate"
       ],
       "firstSeen": "2026-09-01T14:23:14.148Z",
-      "lastSeen": "2026-09-15T23:48:57.722Z",
+      "lastSeen": "2026-09-16T06:58:28.164Z",
       "isNew": true
     },
     "108-6a97947a25d86bc9122f9722": {
@@ -106,7 +106,7 @@
         "Environment & Climate"
       ],
       "firstSeen": "2026-09-02T06:36:51.900Z",
-      "lastSeen": "2026-09-15T23:48:57.722Z",
+      "lastSeen": "2026-09-16T06:58:28.164Z",
       "isNew": true
     },
     "108-6a9a7f596cee8bc93bafa44d": {
@@ -121,7 +121,7 @@
         "Environment & Climate"
       ],
       "firstSeen": "2026-09-04T13:51:46.125Z",
-      "lastSeen": "2026-09-15T23:48:57.722Z",
+      "lastSeen": "2026-09-16T06:58:28.164Z",
       "isNew": true
     },
     "108-6a9a7d286cee8bc93baeb947": {
@@ -136,7 +136,7 @@
         "Environment & Climate"
       ],
       "firstSeen": "2026-09-04T13:51:46.125Z",
-      "lastSeen": "2026-09-15T23:48:57.722Z",
+      "lastSeen": "2026-09-16T06:58:28.164Z",
       "isNew": true
     },
     "108-6a9b7f116cee8bc93bd44f80": {
@@ -151,7 +151,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-09-05T06:29:51.927Z",
-      "lastSeen": "2026-09-15T23:48:57.722Z",
+      "lastSeen": "2026-09-16T06:58:28.164Z",
       "isNew": true
     },
     "108-6a9e971b16392db00d249843": {
@@ -166,7 +166,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-09-07T15:22:58.000Z",
-      "lastSeen": "2026-09-15T23:48:57.722Z",
+      "lastSeen": "2026-09-16T06:58:28.164Z",
       "isNew": true
     },
     "108-6aa0c16163ddb43e5c10623d": {
@@ -183,7 +183,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-09-09T06:52:28.673Z",
-      "lastSeen": "2026-09-15T23:48:57.722Z",
+      "lastSeen": "2026-09-16T06:58:28.164Z",
       "isNew": true
     },
     "108-6aa39ceec7326b5cfc3e4261": {
@@ -198,7 +198,7 @@
         "Management / Leadership"
       ],
       "firstSeen": "2026-09-11T06:48:38.705Z",
-      "lastSeen": "2026-09-15T23:48:57.722Z",
+      "lastSeen": "2026-09-16T06:58:28.164Z",
       "isNew": true
     },
     "108-6aa7ba3727377b077250acad": {
@@ -213,7 +213,22 @@
         "Project Management"
       ],
       "firstSeen": "2026-09-14T21:09:39.462Z",
-      "lastSeen": "2026-09-15T23:48:57.722Z",
+      "lastSeen": "2026-09-16T06:58:28.164Z",
+      "isNew": true
+    },
+    "108-6aaa0233ea623943c100a2fb": {
+      "id": "108-6aaa0233ea623943c100a2fb",
+      "source": "108.jobs",
+      "title": "Project Management Office (PMO) Lead",
+      "org": "Lao Brewery Company Limited (LBC)",
+      "location": "Vientiane Capital",
+      "url": "https://108.jobs/job_detail/6aaa0233ea623943c100a2fb",
+      "closingDate": "2026-10-01T16:59:59.999Z",
+      "categories": [
+        "Project Management"
+      ],
+      "firstSeen": "2026-09-16T06:58:28.164Z",
+      "lastSeen": "2026-09-16T06:58:28.164Z",
       "isNew": true
     }
   },
