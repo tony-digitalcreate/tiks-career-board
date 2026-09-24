@@ -27,7 +27,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-08-24T18:24:18.904Z",
-      "lastSeen": "2026-09-24T00:06:04.678Z",
+      "lastSeen": "2026-09-24T06:55:10.147Z",
       "isNew": true
     },
     "108-6a9688575d0366c462e1f03a": {
@@ -137,7 +137,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-09-09T06:52:28.673Z",
-      "lastSeen": "2026-09-24T00:06:04.678Z",
+      "lastSeen": "2026-09-24T06:55:10.147Z",
       "isNew": true
     },
     "108-6aa39ceec7326b5cfc3e4261": {
@@ -152,7 +152,7 @@
         "Management / Leadership"
       ],
       "firstSeen": "2026-09-11T06:48:38.705Z",
-      "lastSeen": "2026-09-24T00:06:04.678Z",
+      "lastSeen": "2026-09-24T06:55:10.147Z",
       "isNew": true
     },
     "108-6aa7ba3727377b077250acad": {
@@ -167,7 +167,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-09-14T21:09:39.462Z",
-      "lastSeen": "2026-09-24T00:06:04.678Z",
+      "lastSeen": "2026-09-24T06:55:10.147Z",
       "isNew": true
     },
     "108-6aaa0233ea623943c100a2fb": {
@@ -182,7 +182,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-09-16T06:58:28.164Z",
-      "lastSeen": "2026-09-24T00:06:04.678Z",
+      "lastSeen": "2026-09-24T06:55:10.147Z",
       "isNew": true
     },
     "108-6aaa5cf239f160c77b6c31e8": {
@@ -197,7 +197,7 @@
         "Environment & Climate"
       ],
       "firstSeen": "2026-09-16T14:27:18.852Z",
-      "lastSeen": "2026-09-24T00:06:04.678Z",
+      "lastSeen": "2026-09-24T06:55:10.147Z",
       "isNew": true
     },
     "108-6aaa404639f160c77b61b344": {
@@ -228,13 +228,13 @@
         "Management / Leadership"
       ],
       "firstSeen": "2026-09-17T14:31:50.949Z",
-      "lastSeen": "2026-09-24T00:06:04.678Z",
+      "lastSeen": "2026-09-24T06:55:10.147Z",
       "isNew": true
     },
     "108-6ab39f91176d3221c168c045": {
       "id": "108-6ab39f91176d3221c168c045",
       "source": "108.jobs",
-      "title": "Junior Project Coordinator",
+      "title": "Junior Project Coordinator (Part-Time)",
       "org": "People System Co., Ltd",
       "location": "Vientiane Capital",
       "url": "https://108.jobs/job_detail/6ab39f91176d3221c168c045",
@@ -243,7 +243,23 @@
         "Project Management"
       ],
       "firstSeen": "2026-09-23T14:31:24.969Z",
-      "lastSeen": "2026-09-24T00:06:04.678Z",
+      "lastSeen": "2026-09-24T06:55:10.147Z",
+      "isNew": true
+    },
+    "108-6ab4a19c176d3221c19a5392": {
+      "id": "108-6ab4a19c176d3221c19a5392",
+      "source": "108.jobs",
+      "title": "Consultant – Public-Private Dialogue (PPD) and Local Investment Climate Reform",
+      "org": "MINISTRY OF INDUSTRY AND COMMERCE (NATIONAL IMPLEMENTATION UNIT)",
+      "location": "Vientiane Capital",
+      "url": "https://108.jobs/job_detail/6ab4a19c176d3221c19a5392",
+      "closingDate": "2026-10-08T16:59:59.999Z",
+      "categories": [
+        "Environment & Climate",
+        "Consultant / NGO"
+      ],
+      "firstSeen": "2026-09-24T06:55:10.147Z",
+      "lastSeen": "2026-09-24T06:55:10.147Z",
       "isNew": true
     }
   },
