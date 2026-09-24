@@ -1,20 +1,5 @@
 {
   "jobs": {
-    "108-6a8424d84c658c5da720625f": {
-      "id": "108-6a8424d84c658c5da720625f",
-      "source": "108.jobs",
-      "title": "Mine Surveyor (Junior to Senior)",
-      "org": "Asia Pacific Mining Solutions",
-      "location": "Vientiane Capital, Vientiane Province, Savannakhet, Xaisomboun, Sekong",
-      "url": "https://108.jobs/job_detail/6a8424d84c658c5da720625f",
-      "closingDate": "2026-09-17T16:59:59.999Z",
-      "categories": [
-        "GIS & Mapping"
-      ],
-      "firstSeen": "2026-08-18T10:17:32.050Z",
-      "lastSeen": "2026-09-17T14:31:50.949Z",
-      "isNew": true
-    },
     "108-6a8c17b9ab2a8a292584bb01": {
       "id": "108-6a8c17b9ab2a8a292584bb01",
       "source": "108.jobs",
@@ -44,23 +29,6 @@
       ],
       "firstSeen": "2026-09-01T14:23:14.148Z",
       "lastSeen": "2026-09-21T16:04:59.707Z",
-      "isNew": true
-    },
-    "108-6a97947a25d86bc9122f9722": {
-      "id": "108-6a97947a25d86bc9122f9722",
-      "source": "108.jobs",
-      "title": "Project Coordinator for Carbon and Stove Donation Project",
-      "org": "Lanxang Environmental Consulting and Trading Co., Ltd.",
-      "location": "Vientiane Capital, Oudomxay Province, Luang Prabang",
-      "url": "https://108.jobs/job_detail/6a97947a25d86bc9122f9722",
-      "closingDate": "2026-09-17T16:59:59.000Z",
-      "categories": [
-        "Project Management",
-        "Management / Leadership",
-        "Environment & Climate"
-      ],
-      "firstSeen": "2026-09-02T06:36:51.900Z",
-      "lastSeen": "2026-09-17T14:31:50.949Z",
       "isNew": true
     },
     "108-6a9a7f596cee8bc93bafa44d": {
@@ -167,7 +135,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-09-14T21:09:39.462Z",
-      "lastSeen": "2026-09-24T14:30:47.913Z",
+      "lastSeen": "2026-09-24T20:55:14.188Z",
       "isNew": true
     },
     "108-6aaa0233ea623943c100a2fb": {
@@ -182,7 +150,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-09-16T06:58:28.164Z",
-      "lastSeen": "2026-09-24T14:30:47.913Z",
+      "lastSeen": "2026-09-24T20:55:14.188Z",
       "isNew": true
     },
     "108-6aaa5cf239f160c77b6c31e8": {
@@ -197,7 +165,7 @@
         "Environment & Climate"
       ],
       "firstSeen": "2026-09-16T14:27:18.852Z",
-      "lastSeen": "2026-09-24T14:30:47.913Z",
+      "lastSeen": "2026-09-24T20:55:14.188Z",
       "isNew": true
     },
     "108-6aaa404639f160c77b61b344": {
@@ -228,7 +196,7 @@
         "Management / Leadership"
       ],
       "firstSeen": "2026-09-17T14:31:50.949Z",
-      "lastSeen": "2026-09-24T14:30:47.913Z",
+      "lastSeen": "2026-09-24T20:55:14.188Z",
       "isNew": true
     },
     "108-6ab39f91176d3221c168c045": {
@@ -243,7 +211,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-09-23T14:31:24.969Z",
-      "lastSeen": "2026-09-24T14:30:47.913Z",
+      "lastSeen": "2026-09-24T20:55:14.188Z",
       "isNew": true
     },
     "108-6ab4a19c176d3221c19a5392": {
@@ -259,7 +227,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-09-24T06:55:10.147Z",
-      "lastSeen": "2026-09-24T14:30:47.913Z",
+      "lastSeen": "2026-09-24T20:55:14.188Z",
       "isNew": true
     },
     "108-6ab4d9a6df55488af8f78982": {
@@ -276,7 +244,7 @@
         "Environment & Climate"
       ],
       "firstSeen": "2026-09-24T14:30:47.913Z",
-      "lastSeen": "2026-09-24T14:30:47.913Z",
+      "lastSeen": "2026-09-24T20:55:14.188Z",
       "isNew": true
     }
   },
