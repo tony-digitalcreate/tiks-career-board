@@ -1,20 +1,5 @@
 {
   "jobs": {
-    "108-6aa7ba3727377b077250acad": {
-      "id": "108-6aa7ba3727377b077250acad",
-      "source": "108.jobs",
-      "title": "Project Manager",
-      "org": "Lao Development and Land Services Co.,LTD",
-      "location": "Vientiane Capital",
-      "url": "https://108.jobs/job_detail/6aa7ba3727377b077250acad",
-      "closingDate": "2026-09-30T16:59:59.000Z",
-      "categories": [
-        "Project Management"
-      ],
-      "firstSeen": "2026-09-14T21:09:39.462Z",
-      "lastSeen": "2026-09-30T16:09:04.620Z",
-      "isNew": true
-    },
     "108-6aaa0233ea623943c100a2fb": {
       "id": "108-6aaa0233ea623943c100a2fb",
       "source": "108.jobs",
@@ -73,7 +58,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-09-23T14:31:24.969Z",
-      "lastSeen": "2026-10-07T07:53:42.055Z",
+      "lastSeen": "2026-10-07T17:04:48.931Z",
       "isNew": true
     },
     "108-6ab4a19c176d3221c19a5392": {
@@ -89,7 +74,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-09-24T06:55:10.147Z",
-      "lastSeen": "2026-10-07T07:53:42.055Z",
+      "lastSeen": "2026-10-07T17:04:48.931Z",
       "isNew": true
     },
     "108-6ab4d9a6df55488af8f78982": {
@@ -106,7 +91,7 @@
         "Environment & Climate"
       ],
       "firstSeen": "2026-09-24T14:30:47.913Z",
-      "lastSeen": "2026-10-07T07:53:42.055Z",
+      "lastSeen": "2026-10-07T17:04:48.931Z",
       "isNew": true
     },
     "108-6aba3607b5d2948ba1623b1d": {
@@ -122,7 +107,7 @@
         "Environment & Climate"
       ],
       "firstSeen": "2026-09-28T17:51:54.563Z",
-      "lastSeen": "2026-10-07T07:53:42.055Z",
+      "lastSeen": "2026-10-07T17:04:48.931Z",
       "isNew": true
     },
     "108-6abcc0c4b5d2948ba10ade9b": {
@@ -137,7 +122,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-09-30T16:09:04.620Z",
-      "lastSeen": "2026-10-07T07:53:42.055Z",
+      "lastSeen": "2026-10-07T17:04:48.931Z",
       "isNew": true
     },
     "108-6abe2dd4520cc0b7ee5e91d2": {
@@ -152,7 +137,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-10-01T16:46:46.507Z",
-      "lastSeen": "2026-10-07T07:53:42.055Z",
+      "lastSeen": "2026-10-07T17:04:48.931Z",
       "isNew": true
     },
     "108-6abe2d51520cc0b7ee5e6c09": {
@@ -182,7 +167,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-10-02T07:43:08.388Z",
-      "lastSeen": "2026-10-07T07:53:42.055Z",
+      "lastSeen": "2026-10-07T17:04:48.931Z",
       "isNew": true
     },
     "108-6abf1376520cc0b7ee82a511": {
@@ -197,7 +182,7 @@
         "Environment & Climate"
       ],
       "firstSeen": "2026-10-02T07:43:08.388Z",
-      "lastSeen": "2026-10-07T07:53:42.055Z",
+      "lastSeen": "2026-10-07T17:04:48.931Z",
       "isNew": true
     },
     "108-6abf70a64c305615f7549345": {
@@ -212,7 +197,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-10-02T16:00:57.362Z",
-      "lastSeen": "2026-10-07T07:53:42.055Z",
+      "lastSeen": "2026-10-07T17:04:48.931Z",
       "isNew": true
     },
     "108-6ac4a9df318531c00285560b": {
@@ -227,7 +212,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-10-06T08:35:32.645Z",
-      "lastSeen": "2026-10-07T07:53:42.055Z",
+      "lastSeen": "2026-10-07T17:04:48.931Z",
       "isNew": true
     },
     "108-6ac4c059318531c0028ff605": {
@@ -242,7 +227,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-10-06T16:22:37.513Z",
-      "lastSeen": "2026-10-07T07:53:42.055Z",
+      "lastSeen": "2026-10-07T17:04:48.931Z",
       "isNew": true
     },
     "108-6ac5bfad318531c002c0c29c": {
@@ -257,7 +242,22 @@
         "Environment & Climate"
       ],
       "firstSeen": "2026-10-07T07:53:42.055Z",
-      "lastSeen": "2026-10-07T07:53:42.055Z",
+      "lastSeen": "2026-10-07T17:04:48.931Z",
+      "isNew": true
+    },
+    "108-6ac6732fea43dfd22ef6e98e": {
+      "id": "108-6ac6732fea43dfd22ef6e98e",
+      "source": "108.jobs",
+      "title": "Program Officer",
+      "org": "Good Neighbors Laos",
+      "location": "Vientiane Capital",
+      "url": "https://108.jobs/job_detail/6ac6732fea43dfd22ef6e98e",
+      "closingDate": "2026-10-22T16:59:59.999Z",
+      "categories": [
+        "Project Management"
+      ],
+      "firstSeen": "2026-10-07T17:04:48.931Z",
+      "lastSeen": "2026-10-07T17:04:48.931Z",
       "isNew": true
     }
   },
