@@ -1,20 +1,5 @@
 {
   "jobs": {
-    "108-6ab39f91176d3221c168c045": {
-      "id": "108-6ab39f91176d3221c168c045",
-      "source": "108.jobs",
-      "title": "Junior Project Coordinator (Part-Time)",
-      "org": "People System Co., Ltd",
-      "location": "Vientiane Capital",
-      "url": "https://108.jobs/job_detail/6ab39f91176d3221c168c045",
-      "closingDate": "2026-10-23T16:59:59.000Z",
-      "categories": [
-        "Project Management"
-      ],
-      "firstSeen": "2026-09-23T14:31:24.969Z",
-      "lastSeen": "2026-10-23T14:31:39.667Z",
-      "isNew": true
-    },
     "108-6abcc0c4b5d2948ba10ade9b": {
       "id": "108-6abcc0c4b5d2948ba10ade9b",
       "source": "108.jobs",
@@ -42,7 +27,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-10-01T16:46:46.507Z",
-      "lastSeen": "2026-10-30T16:21:56.053Z",
+      "lastSeen": "2026-10-30T21:46:56.840Z",
       "isNew": true
     },
     "108-6abe2d51520cc0b7ee5e6c09": {
@@ -72,7 +57,7 @@
         "Environment & Climate"
       ],
       "firstSeen": "2026-10-02T07:43:08.388Z",
-      "lastSeen": "2026-10-30T16:21:56.053Z",
+      "lastSeen": "2026-10-30T21:46:56.840Z",
       "isNew": true
     },
     "108-6ac89278945bf398c7fe974f": {
@@ -104,7 +89,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-09T08:08:52.842Z",
-      "lastSeen": "2026-10-30T16:21:56.053Z",
+      "lastSeen": "2026-10-30T21:46:56.840Z",
       "isNew": true
     },
     "108-6ac8b52d945bf398c70b9be0": {
@@ -119,7 +104,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-10-09T16:42:01.330Z",
-      "lastSeen": "2026-10-30T16:21:56.053Z",
+      "lastSeen": "2026-10-30T21:46:56.840Z",
       "isNew": true
     },
     "108-6accc91728ab2cca4d860ffb": {
@@ -240,7 +225,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-10-20T06:50:43.033Z",
-      "lastSeen": "2026-10-30T16:21:56.053Z",
+      "lastSeen": "2026-10-30T21:46:56.840Z",
       "isNew": true
     },
     "108-6ad83bcb54e513296d2d4227": {
@@ -255,7 +240,7 @@
         "GIS & Mapping"
       ],
       "firstSeen": "2026-10-21T06:46:01.032Z",
-      "lastSeen": "2026-10-30T16:21:56.053Z",
+      "lastSeen": "2026-10-30T21:46:56.840Z",
       "isNew": true
     },
     "108-6adb0783a7ce05dbb4a7b579": {
@@ -270,7 +255,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-10-25T20:07:52.270Z",
-      "lastSeen": "2026-10-30T16:21:56.053Z",
+      "lastSeen": "2026-10-30T21:46:56.840Z",
       "isNew": true
     },
     "108-6adef7aba7ce05dbb4346b37": {
@@ -285,7 +270,7 @@
         "Management / Leadership"
       ],
       "firstSeen": "2026-10-26T07:12:24.825Z",
-      "lastSeen": "2026-10-30T16:21:56.053Z",
+      "lastSeen": "2026-10-30T21:46:56.840Z",
       "isNew": true
     },
     "108-6ae42c61b70e3547181b38ff": {
@@ -300,7 +285,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-30T07:52:39.878Z",
-      "lastSeen": "2026-10-30T16:21:56.053Z",
+      "lastSeen": "2026-10-30T21:46:56.840Z",
       "isNew": true
     }
   },
