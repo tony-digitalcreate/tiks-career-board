@@ -74,7 +74,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-09T08:08:52.842Z",
-      "lastSeen": "2026-11-05T08:43:06.371Z",
+      "lastSeen": "2026-11-05T17:45:00.109Z",
       "isNew": true
     },
     "108-6ac8b52d945bf398c70b9be0": {
@@ -89,53 +89,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-10-09T16:42:01.330Z",
-      "lastSeen": "2026-11-05T08:43:06.371Z",
-      "isNew": true
-    },
-    "108-6acefbb8cb661d4eeee9a71c": {
-      "id": "108-6acefbb8cb661d4eeee9a71c",
-      "source": "108.jobs",
-      "title": "Project Officer - Program Quality Health",
-      "org": "Catholic Relief Services (CRS)",
-      "location": "Vientiane Capital",
-      "url": "https://108.jobs/job_detail/6acefbb8cb661d4eeee9a71c",
-      "closingDate": "2026-10-29T16:59:59.000Z",
-      "categories": [
-        "Project Management"
-      ],
-      "firstSeen": "2026-10-14T06:53:15.258Z",
-      "lastSeen": "2026-10-29T16:30:22.489Z",
-      "isNew": true
-    },
-    "108-6acf2660bbba4db565d98efd": {
-      "id": "108-6acf2660bbba4db565d98efd",
-      "source": "108.jobs",
-      "title": "Environmental and Social Safeguards and Gender Consultant",
-      "org": "Environment and Forest Protection Fund",
-      "location": "Vientiane Capital",
-      "url": "https://108.jobs/job_detail/6acf2660bbba4db565d98efd",
-      "closingDate": "2026-10-29T16:59:59.000Z",
-      "categories": [
-        "Environment & Climate",
-        "Consultant / NGO"
-      ],
-      "firstSeen": "2026-10-14T06:53:15.258Z",
-      "lastSeen": "2026-10-29T16:30:22.489Z",
-      "isNew": true
-    },
-    "108-6acf3b39bbba4db565e4f3b7": {
-      "id": "108-6acf3b39bbba4db565e4f3b7",
-      "source": "108.jobs",
-      "title": "Local Project Assistant",
-      "org": "AFoCO(Asian Forest Cooperation Organization)",
-      "location": "Vientiane Capital, Salavan, Champasak",
-      "url": "https://108.jobs/job_detail/6acf3b39bbba4db565e4f3b7",
-      "closingDate": "2026-10-29T16:59:59.000Z",
-      "categories": [
-        "Project Management"
-      ],
-      "firstSeen": "2026-10-14T14:46:17.926Z",
-      "lastSeen": "2026-10-29T16:30:22.489Z",
+      "lastSeen": "2026-11-05T17:45:00.109Z",
       "isNew": true
     },
     "108-6ad1d0b99648e0d857fa131a": {
@@ -210,7 +164,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-10-25T20:07:52.270Z",
-      "lastSeen": "2026-11-05T08:43:06.371Z",
+      "lastSeen": "2026-11-05T17:45:00.109Z",
       "isNew": true
     },
     "108-6adef7aba7ce05dbb4346b37": {
@@ -225,7 +179,7 @@
         "Management / Leadership"
       ],
       "firstSeen": "2026-10-26T07:12:24.825Z",
-      "lastSeen": "2026-11-05T08:43:06.371Z",
+      "lastSeen": "2026-11-05T17:45:00.109Z",
       "isNew": true
     },
     "108-6ae42c61b70e3547181b38ff": {
@@ -240,7 +194,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-30T07:52:39.878Z",
-      "lastSeen": "2026-11-05T08:43:06.371Z",
+      "lastSeen": "2026-11-05T17:45:00.109Z",
       "isNew": true
     },
     "108-6ae97f8eb70e354718237a61": {
@@ -255,7 +209,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-11-03T13:14:06.029Z",
-      "lastSeen": "2026-11-05T08:43:06.371Z",
+      "lastSeen": "2026-11-05T17:45:00.109Z",
       "isNew": true
     },
     "108-6ae9517ab70e3547181266d6": {
@@ -270,7 +224,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-11-03T13:14:06.029Z",
-      "lastSeen": "2026-11-05T08:43:06.371Z",
+      "lastSeen": "2026-11-05T17:45:00.109Z",
       "isNew": true
     },
     "108-6aebe4d2a60bdca5a1b5284c": {
@@ -285,7 +239,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-11-05T08:43:06.371Z",
-      "lastSeen": "2026-11-05T08:43:06.371Z",
+      "lastSeen": "2026-11-05T17:45:00.109Z",
       "isNew": true
     },
     "108-6aec0210a60bdca5a1c083c6": {
@@ -300,7 +254,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-11-05T08:43:06.371Z",
-      "lastSeen": "2026-11-05T08:43:06.371Z",
+      "lastSeen": "2026-11-05T17:45:00.109Z",
       "isNew": true
     }
   },
