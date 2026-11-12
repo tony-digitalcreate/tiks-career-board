@@ -88,7 +88,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-10-30T07:52:39.878Z",
-      "lastSeen": "2026-11-11T23:50:11.946Z",
+      "lastSeen": "2026-11-12T08:56:43.600Z",
       "isNew": true
     },
     "108-6ae97f8eb70e354718237a61": {
@@ -103,7 +103,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-11-03T13:14:06.029Z",
-      "lastSeen": "2026-11-11T23:50:11.946Z",
+      "lastSeen": "2026-11-12T08:56:43.600Z",
       "isNew": true
     },
     "108-6ae9517ab70e3547181266d6": {
@@ -118,7 +118,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-11-03T13:14:06.029Z",
-      "lastSeen": "2026-11-11T23:50:11.946Z",
+      "lastSeen": "2026-11-12T08:56:43.600Z",
       "isNew": true
     },
     "108-6aebe4d2a60bdca5a1b5284c": {
@@ -133,7 +133,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-11-05T08:43:06.371Z",
-      "lastSeen": "2026-11-11T23:50:11.946Z",
+      "lastSeen": "2026-11-12T08:56:43.600Z",
       "isNew": true
     },
     "108-6aec0210a60bdca5a1c083c6": {
@@ -148,7 +148,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-11-05T08:43:06.371Z",
-      "lastSeen": "2026-11-11T23:50:11.946Z",
+      "lastSeen": "2026-11-12T08:56:43.600Z",
       "isNew": true
     },
     "108-6aed7aa0fdf763906b6657f5": {
@@ -163,7 +163,7 @@
         "Environment & Climate"
       ],
       "firstSeen": "2026-11-06T08:43:59.778Z",
-      "lastSeen": "2026-11-11T23:50:11.946Z",
+      "lastSeen": "2026-11-12T08:56:43.600Z",
       "isNew": true
     },
     "108-6aed6c5afdf763906b60d723": {
@@ -179,7 +179,7 @@
         "Consultant / NGO"
       ],
       "firstSeen": "2026-11-06T08:43:59.778Z",
-      "lastSeen": "2026-11-11T23:50:11.946Z",
+      "lastSeen": "2026-11-12T08:56:43.600Z",
       "isNew": true
     },
     "108-6af183896d10767d18c16d6c": {
@@ -194,7 +194,7 @@
         "GIS & Mapping"
       ],
       "firstSeen": "2026-11-10T03:52:49.417Z",
-      "lastSeen": "2026-11-11T17:33:00.200Z",
+      "lastSeen": "2026-11-12T08:56:43.600Z",
       "isNew": true
     },
     "108-6af2ee6463b84ef335567f7e": {
@@ -209,7 +209,7 @@
         "Project Management"
       ],
       "firstSeen": "2026-11-10T13:56:27.554Z",
-      "lastSeen": "2026-11-11T23:50:11.946Z",
+      "lastSeen": "2026-11-12T08:56:43.600Z",
       "isNew": true
     },
     "108-6af2cb751fad6ad344111994": {
@@ -224,7 +224,69 @@
         "Environment & Climate"
       ],
       "firstSeen": "2026-11-10T13:56:27.554Z",
-      "lastSeen": "2026-11-11T23:50:11.946Z",
+      "lastSeen": "2026-11-12T08:56:43.600Z",
+      "isNew": true
+    },
+    "108-6af55f6291ddb0a532c1690d": {
+      "id": "108-6af55f6291ddb0a532c1690d",
+      "source": "108.jobs",
+      "title": "Project Coordinator (Vientiane)",
+      "org": " Consortium of Yonsei University Industry-Academic Cooperation Foundation of Future Medicine and GDC Consulting",
+      "location": "Vientiane Capital",
+      "url": "https://108.jobs/job_detail/6af55f6291ddb0a532c1690d",
+      "closingDate": "2026-11-27T16:59:59.000Z",
+      "categories": [
+        "Project Management"
+      ],
+      "firstSeen": "2026-11-12T08:56:43.600Z",
+      "lastSeen": "2026-11-12T08:56:43.600Z",
+      "isNew": true
+    },
+    "108-6af5295f91ddb0a532ad3601": {
+      "id": "108-6af5295f91ddb0a532ad3601",
+      "source": "108.jobs",
+      "title": "ERP Project Manager (Odoo)",
+      "org": "TOYOTA  LAOTHANI",
+      "location": "Vientiane Capital",
+      "url": "https://108.jobs/job_detail/6af5295f91ddb0a532ad3601",
+      "closingDate": "2026-12-12T16:59:59.000Z",
+      "categories": [
+        "Project Management"
+      ],
+      "firstSeen": "2026-11-12T08:56:43.600Z",
+      "lastSeen": "2026-11-12T08:56:43.600Z",
+      "isNew": true
+    },
+    "108-6af521933c30f19cf9e3c07b": {
+      "id": "108-6af521933c30f19cf9e3c07b",
+      "source": "108.jobs",
+      "title": "Programme Policy Officer (Livelihood and Technical Training Specialist)_SC8 based at the Ministry of Agriculture and Environment",
+      "org": "The United Nations World Food Programme",
+      "location": "Vientiane Capital",
+      "url": "https://108.jobs/job_detail/6af521933c30f19cf9e3c07b",
+      "closingDate": "2026-11-27T16:59:59.000Z",
+      "categories": [
+        "Environment & Climate"
+      ],
+      "firstSeen": "2026-11-12T08:56:43.600Z",
+      "lastSeen": "2026-11-12T08:56:43.600Z",
+      "isNew": true
+    },
+    "108-6af524a2ec5a34a1abc62dea": {
+      "id": "108-6af524a2ec5a34a1abc62dea",
+      "source": "108.jobs",
+      "title": "Programme Policy Officer (Poverty Graduation Technical Specialist / Team Leader), SC9 based at the Ministry of Agriculture and Environment",
+      "org": "The United Nations World Food Programme",
+      "location": "Vientiane Capital",
+      "url": "https://108.jobs/job_detail/6af524a2ec5a34a1abc62dea",
+      "closingDate": "2026-11-27T16:59:59.000Z",
+      "categories": [
+        "Management / Leadership",
+        "Environment & Climate",
+        "Consultant / NGO"
+      ],
+      "firstSeen": "2026-11-12T08:56:43.600Z",
+      "lastSeen": "2026-11-12T08:56:43.600Z",
       "isNew": true
     }
   },
